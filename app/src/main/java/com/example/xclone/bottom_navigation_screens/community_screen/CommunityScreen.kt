@@ -1,4 +1,4 @@
-package com.example.xclone.bottom_navigation_screens
+package com.example.xclone.bottom_navigation_screens.community_screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,9 +8,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun HomeScreen() {
-    Box(modifier = Modifier.fillMaxSize()
+fun CommunityScreen() {
+    Box(
+        modifier = Modifier.fillMaxSize()
         ,contentAlignment = Alignment.Center){
-        Text(text = "Home Screen")
+        Text(text = "Community Screen")
     }
 }

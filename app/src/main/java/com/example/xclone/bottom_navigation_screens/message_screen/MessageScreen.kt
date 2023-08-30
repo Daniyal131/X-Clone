@@ -1,4 +1,4 @@
-package com.example.xclone.bottom_navigation_screens
+package com.example.xclone.bottom_navigation_screens.message_screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

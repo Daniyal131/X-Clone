@@ -4,11 +4,11 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.xclone.bottom_navigation_screens.CommunityScreen
-import com.example.xclone.bottom_navigation_screens.HomeScreen
-import com.example.xclone.bottom_navigation_screens.MessageScreen
-import com.example.xclone.bottom_navigation_screens.NotificationScreen
-import com.example.xclone.bottom_navigation_screens.SearchScreen
+import com.example.xclone.bottom_navigation_screens.community_screen.CommunityScreen
+import com.example.xclone.bottom_navigation_screens.home_screen.HomeScreen
+import com.example.xclone.bottom_navigation_screens.message_screen.MessageScreen
+import com.example.xclone.bottom_navigation_screens.notificaiton_screen.NotificationScreen
+import com.example.xclone.bottom_navigation_screens.search_screen.SearchScreen
 
 
 @Composable

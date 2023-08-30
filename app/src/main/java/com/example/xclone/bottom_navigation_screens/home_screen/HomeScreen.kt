@@ -1,4 +1,4 @@
-package com.example.xclone.bottom_navigation_screens
+package com.example.xclone.bottom_navigation_screens.home_screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,9 +8,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun NotificationScreen() {
+fun HomeScreen() {
     Box(modifier = Modifier.fillMaxSize()
         ,contentAlignment = Alignment.Center){
-        Text(text = "Notification Screen")
+        Text(text = "Home Screen")
     }
 }
