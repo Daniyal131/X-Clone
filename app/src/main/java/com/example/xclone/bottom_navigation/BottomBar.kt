@@ -1,10 +1,10 @@
 package com.example.xclone.bottom_navigation
 
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
@@ -19,12 +19,12 @@ fun BottomBar(
     navController: NavHostController, state: MutableState<Boolean>, modifier: Modifier = Modifier
 ) {
     val screens = listOf(
-        Screens.Home, Screens.Community, Screens.Message, Screens.Message, Screens.Search
+        Screens.Home, Screens.Search, Screens.Community, Screens.Notification, Screens.Message
     )
 
     NavigationBar(
         modifier = modifier,
-        containerColor = Color.LightGray,
+        containerColor = MaterialTheme.colorScheme.background,
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
