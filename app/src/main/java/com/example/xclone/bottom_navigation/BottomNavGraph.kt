@@ -10,6 +10,7 @@ import com.example.xclone.bottom_navigation_screens.MessageScreen
 import com.example.xclone.bottom_navigation_screens.NotificationScreen
 import com.example.xclone.bottom_navigation_screens.SearchScreen
 
+
 @Composable
 fun BottomBarNavGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = Screens.Home.route){
