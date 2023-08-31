@@ -10,9 +10,5 @@ import com.example.xclone.bottom_navigation_screens.home_screen.top_bar_home_scr
 
 @Composable
 fun HomeScreen() {
-//    Box(modifier = Modifier.fillMaxSize()
-//        ,contentAlignment = Alignment.Center){
-//        Text(text = "Home Screen")
-//    }
     TopAppBar()
 }

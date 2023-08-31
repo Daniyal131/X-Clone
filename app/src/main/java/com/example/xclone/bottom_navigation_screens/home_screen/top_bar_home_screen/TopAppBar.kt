@@ -28,7 +28,7 @@ fun TopAppBar() {
             CenterAlignedTopAppBar(
                 title = {
                     Text(
-                        "Centered TopAppBar",
+                        "X Clone",
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
@@ -41,14 +41,14 @@ fun TopAppBar() {
                         )
                     }
                 },
-                actions = {
-                    IconButton(onClick = { /* doSomething() */ }) {
-                        Icon(
-                            imageVector = Icons.Filled.Favorite,
-                            contentDescription = "Localized description"
-                        )
-                    }
-                }
+//                actions = {
+//                    IconButton(onClick = { /* doSomething() */ }) {
+//                        Icon(
+//                            imageVector = Icons.Filled.Favorite,
+//                            contentDescription = "Localized description"
+//                        )
+//                    }
+//                }
             )
         },
         content = { innerPadding ->
