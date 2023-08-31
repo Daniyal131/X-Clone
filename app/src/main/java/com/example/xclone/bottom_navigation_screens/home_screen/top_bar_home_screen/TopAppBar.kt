@@ -41,17 +41,9 @@ fun TopAppBar() {
                         )
                     }
                 },
-//                actions = {
-//                    IconButton(onClick = { /* doSomething() */ }) {
-//                        Icon(
-//                            imageVector = Icons.Filled.Favorite,
-//                            contentDescription = "Localized description"
-//                        )
-//                    }
-//                }
             )
         },
-        content = { innerPadding ->
+        content = {innerPadding ->
             LazyColumn(
                 contentPadding = innerPadding,
                 verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -66,6 +58,12 @@ fun TopAppBar() {
 //                            .padding(horizontal = 16.dp)
 //                    )
 //                }
+//                items(50) {
+//                    Text("Daniyal$it")
+//                }
+                item {
+                    Text("Daniyal")
+                }
             }
             // Working need to start from Here
         }
