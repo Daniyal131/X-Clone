@@ -21,9 +21,9 @@ fun HomeScreen() {
 //    val navController: NavHostController = rememberNavController()
     LazyColumn {
         item {
-            CustomTopAppBar()
-//            TopAppBar()
-            TopNavigationBar()
+//            CustomTopAppBar()
+            TopAppBar()
+//            TopNavigationBar()
 //            SetupNavGraphForHomeScreen(navController = navController)
         }
     }
