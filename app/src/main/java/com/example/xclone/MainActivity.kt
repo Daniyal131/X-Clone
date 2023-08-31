@@ -10,8 +10,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.example.xclone.bottom_navigation.BottomBarInvoke
 import com.example.xclone.bottom_navigation_screens.home_screen.top_bar_home_screen.TopAppBar
+import com.example.xclone.bottom_navigation_screens.home_screen.top_navigation_bar.SetupNavGraphForHomeScreen
 import com.example.xclone.ui.theme.XCloneTheme
 
 class MainActivity : ComponentActivity() {

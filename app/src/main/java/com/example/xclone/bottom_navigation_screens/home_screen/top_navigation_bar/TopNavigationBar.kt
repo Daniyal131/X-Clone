@@ -23,8 +23,10 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.example.xclone.bottom_navigation_screens.notificaiton_screen.NotificationScreen
 
 @Composable
 fun TopNavigationBar() {
@@ -48,9 +50,11 @@ fun TopNavigationBar() {
                 textAlign = TextAlign.Center,
             )
             if(for_you_selected){
-                Divider(color = Color(0xff00d2ff) , thickness = 4.dp , modifier = Modifier.padding(horizontal = 70.dp).clip(
-                    RoundedCornerShape(2.dp)
-                ) )
+                Divider(color = Color(0xff00d2ff) , thickness = 4.dp , modifier = Modifier
+                    .padding(horizontal = 70.dp)
+                    .clip(
+                        RoundedCornerShape(2.dp)
+                    ) )
             }
         }
         Column(modifier = Modifier.width(screenWidth/2)){
@@ -65,12 +69,20 @@ fun TopNavigationBar() {
                 textAlign = TextAlign.Center
             )
             if(!for_you_selected){
-                Divider(color = Color(0xff00d2ff) , thickness = 4.dp , modifier = Modifier.padding(horizontal = 62.dp).clip(
-                    RoundedCornerShape(2.dp)
-                ) )
+                Divider(color = Color(0xff00d2ff) , thickness = 4.dp , modifier = Modifier
+                    .padding(horizontal = 62.dp)
+                    .clip(
+                        RoundedCornerShape(2.dp)
+                    ) )
             }
         }
 
     }
     Divider(color = Color.Gray , thickness = 1.dp)
+}
+
+@Preview(showBackground = true)
+@Composable
+fun TopNavigationBarPreview() {
+    TopNavigationBar()
 }
