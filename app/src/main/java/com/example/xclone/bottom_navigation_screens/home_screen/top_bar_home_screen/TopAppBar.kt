@@ -64,7 +64,9 @@ fun TopAppBar() {
                     )
                 },
                 navigationIcon = {
-                    IconButton(onClick = { /* doSomething() */ }) {
+                    IconButton(onClick = {
+
+                    }) {
                         Icon(
                             imageVector = Icons.Filled.Menu,
                             contentDescription = "Localized description"
