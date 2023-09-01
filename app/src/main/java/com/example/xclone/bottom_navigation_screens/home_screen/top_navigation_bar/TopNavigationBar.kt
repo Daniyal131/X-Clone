@@ -26,10 +26,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavGraph.Companion.findStartDestination
+import androidx.navigation.NavHostController
+import androidx.navigation.NavOptions
 import com.example.xclone.bottom_navigation_screens.notificaiton_screen.NotificationScreen
 
 @Composable
-fun TopNavigationBar() {
+fun TopNavigationBar(navController: NavHostController) {
     val configuration = LocalConfiguration.current
     val screenWidth: Dp = configuration.screenWidthDp.dp
 
@@ -45,6 +48,12 @@ fun TopNavigationBar() {
                     .fillMaxWidth()
                     .clickable {
                         for_you_selected = true
+                        navController.navigate(route = ScreenForHome.ForYou.route) {
+                            popUpTo(navController.graph.findStartDestination().id){
+                                saveState = true
+                            }
+                            launchSingleTop = true
+                        }
                     }
                     .padding(5.dp) ,
                 textAlign = TextAlign.Center,
@@ -64,6 +73,11 @@ fun TopNavigationBar() {
                     .fillMaxWidth()
                     .clickable {
                         for_you_selected = false
+                        navController.navigate(
+                            route = ScreenForHome.FollowingYou.route
+                        ){
+                            popUpTo(navController.graph.findStartDestination().id)
+                        }
                     }
                     .padding(5.dp) ,
                 textAlign = TextAlign.Center
@@ -84,5 +98,5 @@ fun TopNavigationBar() {
 @Preview(showBackground = true)
 @Composable
 fun TopNavigationBarPreview() {
-    TopNavigationBar()
+//    TopNavigationBar()
 }
