@@ -27,6 +27,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -74,6 +75,18 @@ import kotlinx.coroutines.launch
 //}
 
 
+//@Composable
+//fun DrawerPanel(scaffoldState: ScaffoldState , scope: CoroutineScope){
+//    List(10) {
+//        Text(text = "item$it", modifier = Modifier.padding(horizontal = 20.dp , vertical = 10.dp))
+//    }
+//    IconButton(onClick = {
+//        scope?.launch {scaffoldState?.drawerState?.close()}
+//    }) {
+//        Icon(imageVector = Icons.Default.ExitToApp, contentDescription = "Close Icon")
+//    }
+//}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DrawerPanel() {
@@ -116,4 +129,10 @@ fun DrawerPanel() {
             }
         }
     )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DrawerPanelPreview() {
+    DrawerPanel()
 }
