@@ -44,6 +44,8 @@ import kotlinx.coroutines.launch
 @Composable
 fun TopAppBar() {
     val navController: NavHostController = rememberNavController()
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
+    val scope = rememberCoroutineScope()
 //    Scaffold(
 //        topBar = {
 //            CenterAlignedTopAppBar(
@@ -82,7 +84,7 @@ fun TopAppBar() {
                 },
                 navigationIcon = {
                     IconButton(onClick = {
-
+                        scope.launch { drawerState.open() }
                     }) {
                         Icon(
                             imageVector = Icons.Filled.Menu,
@@ -93,10 +95,44 @@ fun TopAppBar() {
             )
         }
     ) {
+//        val items = listOf(Icons.Default.Favorite, Icons.Default.Face, Icons.Default.Email)
+//        val selectedItem = remember { mutableStateOf(items[0]) }
+//        ModalDrawerSheet {
+//            Spacer(Modifier.height(12.dp))
+//            items.forEach { item ->
+//                NavigationDrawerItem(
+//                    icon = { Icon(item, contentDescription = null) },
+//                    label = { Text(item.name) },
+//                    selected = item == selectedItem.value,
+//                    onClick = {
+//                        scope.launch { drawerState.close() }
+//                        selectedItem.value = item
+//                    },
+//                    modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
+//                )
+//            }
+//        }
         Column(modifier = Modifier.fillMaxSize()) {
             Divider(color = Color.Gray , thickness = 1.dp , modifier = Modifier.padding(it))
             TopNavigationBar(navController)
             SetupNavGraphForHomeScreen(navController = navController)
+//            val items = listOf(Icons.Default.Favorite, Icons.Default.Face, Icons.Default.Email)
+//            val selectedItem = remember { mutableStateOf(items[0]) }
+//                ModalDrawerSheet {
+//                    Spacer(Modifier.height(12.dp))
+//                    items.forEach { item ->
+//                        NavigationDrawerItem(
+//                            icon = { Icon(item, contentDescription = null) },
+//                            label = { Text(item.name) },
+//                            selected = item == selectedItem.value,
+//                            onClick = {
+//                                scope.launch { drawerState.close() }
+//                                selectedItem.value = item
+//                            },
+//                            modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
+//                        )
+//                    }
+//                }
         }
     }
 }
