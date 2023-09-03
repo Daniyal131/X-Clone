@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.xclone.bottom_navigation_screens.home_screen.top_bar_home_screen.CustomTopAppBar
+import com.example.xclone.bottom_navigation_screens.home_screen.top_bar_home_screen.DrawerPanel
 import com.example.xclone.bottom_navigation_screens.home_screen.top_bar_home_screen.TopAppBar
 import com.example.xclone.bottom_navigation_screens.home_screen.top_navigation_bar.TopNavigationBar
 
@@ -22,9 +23,10 @@ fun HomeScreen() {
     LazyColumn {
         item {
 //            CustomTopAppBar()
-            TopAppBar()
+//            TopAppBar()
 //            TopNavigationBar()
 //            SetupNavGraphForHomeScreen(navController = navController)
+            DrawerPanel()
         }
     }
 }
