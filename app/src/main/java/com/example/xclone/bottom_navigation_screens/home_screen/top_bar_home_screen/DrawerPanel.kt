@@ -174,19 +174,7 @@ fun DrawerPanel() {
             }
         },
         content = {
-//            Column(
-//                modifier = Modifier
-//                    .fillMaxSize()
-//                    .padding(16.dp),
-//                horizontalAlignment = Alignment.CenterHorizontally
-//            ) {
-//                Text(text = if (drawerState.isClosed) ">>> Swipe >>>" else "<<< Swipe <<<")
-//                Spacer(Modifier.height(20.dp))
-//                Button(onClick = { scope.launch { drawerState.open() } }) {
-//                    Text("Click to open")
-//                }
-//            }
-            TopAppBar()
+            TopAppBar(drawerState = drawerState)
         }
     )
 }
