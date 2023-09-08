@@ -111,6 +111,7 @@ fun DrawerPanel() {
 //                    )
 //                }
 //            }
+              DrawerPanelContent()
         },
         content = {
             TopAppBar(drawerState = drawerState)
