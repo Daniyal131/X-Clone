@@ -68,7 +68,6 @@ fun DrawerPanelContent() {
                     )
                 }
 
-//            Spacer(modifier = Modifier.width(16.dp))
 
                 IconButton(onClick = {
 
