@@ -82,7 +82,7 @@ fun DrawerPanelContent() {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(5.dp)
+                    .padding(5.dp) 
             ) {
                 val name = "Muhammad Daniyal Khan"
                 val userName = "@daniiiyal01"
