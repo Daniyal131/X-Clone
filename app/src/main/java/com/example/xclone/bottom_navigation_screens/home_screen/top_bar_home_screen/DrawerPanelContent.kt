@@ -205,12 +205,6 @@ fun DrawerPanelContent() {
                     )
                 }
                 Spacer(modifier = Modifier.size(10.dp))
-//                AnimatedVisibility(visible = ProfessionalToolSelected ) {
-//                    Row {
-//                        Icon(imageVector = Icons.Filled.Send, contentDescription = "Need to Insert Rocket as A Icon")
-//                        Text(text = "    For Professionals")
-//                    }
-//                }
 
                 AnimatedVisibility(
                     visible = ProfessionalToolSelected,
