@@ -268,10 +268,6 @@ fun DrawerPanelContent() {
                         }
                     }
                 }
-
-//                if(ProfessionalToolSelected){
-//
-//                }
             }
         }
     }
